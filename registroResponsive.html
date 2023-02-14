@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="layoutResponsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;1,400&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+
+    <title>Register</title>
+</head>
+
+<body>
+
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="./img/download_WAktbuhC.mp4" type="video/mp4">
+      </video>
+
+      <div id="content"class="content">
+        <h1>Bienvenido a mi página</h1>
+        <p>Pulse salir para entrar en la página </p>
+        <button id="myBtn" onclick="playPause()">Pausar</button>
+        <button id="myBtn" onclick="exit()">Salir</button>
+      </div>
+       -->
+
+<!--
+    Header y nav
+-->
+<nav class="navbar navbar-expand-lg bg-secondary">
+  <div class="container-fluid d-flex">
+    <div class="container text-center">
+      <h1 class="">RUNNING HAMSTER WOJAK<img style="width: 4rem;"alt="logo de la página" src="./img/2kuffv.svg"></img></h1>
+      
+    </div>
+    
+    <div class="container d-flex justify-content-center">
+      <a class="navbar-brand" href="#">Crear nueva entrada &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+      </svg></a>
+    </div>
+    <div class="container d-flex justify-content-between">
+    
+          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#ModalForm"><button type="button" class="btn btn-secondary btn-lg">Login</button></a>
+          
+          <a href="./registroResponsive.html" class="nav-link"><button type="button" class="btn btn-secondary btn-lg">Registro</button></a>
+        
+          <a href="./layoutResponsive.html" class="nav-link"><button type="button" class="btn btn-secondary btn-lg">Entradas</button></a>
+      
+    </div>          
+      
+
+      <div class="container-fluid  d-flex flex-column justify-content-evenly">
+          <button role="button" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="btn btn-success" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+        <div role="button" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"  id="collapseExample" class="collapse">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+          <div id="collapseExample" class="collapse">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          </div>
+        </div>
+         
+      </div>
+  </div> 
+</nav>
+
+
+
+  <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="myform bg-dark">
+                <h1 class="text-center">LOGIN</h1>
+                <form>
+                    <div class="mb-3 mt-4">
+                        <label for="exampleInputEmail1" class="form-label">Usuario<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                          </svg></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>               
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                            <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+                            <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                          </svg></label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Mantener la sesión abierta
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-light mt-3">Entrar</button>
+                    <p>¿ Se te olvidó la contraseña ? <a href="#">Resetear contraseña</a></p>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--
+    Columna principal y banner
+-->
+
+
+
+<div class="container-fluid">
+
+  <div class="row d-flex justify-content-around ">
+
+      <div class="d-flex-column justify-content-center gy-5 col-8">
+
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Registro</li>
+          </ol>
+        </nav>
+
+        <section class="h-100">
+          <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col">
+                <div class="card card-registration my-4">
+                  <div class="row g-0">
+                    <div class="col-xl-6 d-none d-xl-block">
+                      <img src="./img/758410.jpg"
+                        alt="Sample photo" class="img-fluid"
+                        style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="card-body p-md-5 text-black">
+                        <h3 class="mb-5 text-uppercase">Registro de Usuario</h3>
+        
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example1m" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example1m">Nombre *</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example1n" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example1n">Apellidos *</label>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example1m1" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example1m1">Ciudad</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example1n1" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example1n1">Provincia</label>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form3Example8" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Example8">Email *</label>
+                        </div>
+        
+                        <div class="form-outline mb-4">
+                          <div class="form-outline">
+                            <input type="text" id="form3Example1n1" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Example1n1">Código Postal</label>
+                          </div>
+                          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                           Código Postal
+                          </button>
+                        </div>
+        
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form3Example90" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Example90">Comunidad Autónoma</label>
+                        </div>
+        
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                          <label for="floatingTextarea">Pequeña descripción</label>
+                        </div>
+        
+                        <div class="d-flex justify-content-end pt-3">
+                          <button type="button" class="btn btn-light btn-lg">Cancelar</button>
+                          <button type="button" class="btn btn-warning btn-lg ms-2">Enviar</button>
+                        </div>
+        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div> 
+
+  <div class="container-fluid ">
+    <footer class="bg-light text-center text-lg-start ">
+      <div class="container p-4  ">
+        <div class="row ">         
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+            <h5 class="text-uppercase">Dirección:</h5>
+            <h5>C/Juan Ramón Jiménez nº18</h5>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Categorías</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-dark">Noticias</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Eventos</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Pro-tips</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Dieta</a>
+              </li>
+            </ul>
+          </div>
+         
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Secciones</h5>
+    
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-dark">Login</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Registro</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Entradas</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Crear Entrada</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Etiquetas</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-dark">#love</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">#photography</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">#fashion</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">#photooftheday</a>
+              </li>
+            </ul>
+          </div>
+         
+        </div>
+        
+      </div>
+      
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">RunningHamsterWojack.com</a>
+      </div>
+    
+    </footer>
+    
+  </div>
+
+</body>
+
+<script>
+    // Elemento video //
+    var video = document.getElementById("myVideo");
+    
+    // Elemento boton//
+    var btn = document.getElementById("myBtn");
+
+    // Elemento content //
+
+    var content = document.getElementById("content")
+
+    // Elemento Footer //
+
+    var footer = document.getElementById("mainFooter")
+
+     // Elemento Container //
+
+     var main = document.getElementById("mainContainer")
+    
+    // El pause and play de video
+    function playPause() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+
+    function exit(){
+        
+        video.style.setProperty('visibility','hidden')
+        content.style.setProperty('visibility','hidden')
+        footer.style.setProperty('visibility','visible')
+        main.style.setProperty('overflow','visible')
+
+    }
+    </script>
+</html>
