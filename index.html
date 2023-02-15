@@ -12,17 +12,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;1,400&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
-<!-- import jquery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<!-- Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <!--Modal JS Script -->
-<script>
+<!-- <script>
     window.onload = () => {
         $('#onload').modal('show');
     }
-</script>
+</script> -->
 
     <title>Layout Responsive</title>
 </head>
@@ -59,29 +55,29 @@
 
   <nav class="navbar navbar-expand-lg bg-secondary">
     <div class="container-fluid d-flex">
-      <div class="container text-center">
-        <h2>RUNNING HAMSTER WOJAKAAA<img style="width: 4rem;" alt="logo de la página" src="./img/2kuffv.svg"></h2>
+      <div class="container text-center text-white">
+        <h2>RUNNING HAMSTER WOJAK<img style="width: 4rem;" alt="logo de la página" src="./img/2kuffv.svg"></h2>
         
       </div>
       
       <div class="container d-flex justify-content-center">
-        <a class="navbar-brand" href="#">Crear nueva entrada &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+        <a class="navbar-brand text-white" href="#">Crear nueva entrada &nbsp; <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
           <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
         </svg></a>
       </div>
       <div class="container d-flex justify-content-between">
       
-            <a  class="btn btn-secondary btn-lg"> Login</a>
+            <a data-bs-toggle="modal" data-bs-target="#ModalForm"  class="btn btn-secondary btn-lg">Login</a>
             
             <a href="./registroResponsive.html"  class="btn btn-secondary btn-lg">Registro</a>
           
-            <a  class="btn btn-secondary btn-lg">Entradas</a>
+            <a href="./index.html"  class="btn btn-secondary btn-lg">Entradas</a>
         
       </div>          
         
 
       <div class="container-fluid  d-flex flex-column justify-content-evenly">
-        <button data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="btn btn-success" type="submit">
+        <button title="boton buscador" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="btn btn-success" type="submit">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
           </svg>
@@ -102,7 +98,7 @@
     Login
 -->
 
-  <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalForm" aria-hidden="true">
+  <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
@@ -111,13 +107,13 @@
                 <h1 class="text-center">LOGIN</h1>
                 <form>
                     <div class="mb-3 mt-4">
-                        <label for="usuario" class="form-label">Usuario<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <label for="exampleInputEmail1" class="form-label">Usuario<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
                           </svg></label>
-                        <input type="email" class="form-control" id="usuario" aria-describedby="usuario">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>               
                     <div class="mb-3">
-                        <label for="usuario" class="form-label">Contraseña <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
                             <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
                             <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                           </svg></label>
@@ -171,13 +167,13 @@
           </nav>
 
 
-          <div class="d-flex flex-wrap align-items-start justify-content-between">
+          <div class="d-flex flex-wrap align-items-start justify-content-between text-black">
 
-            <div class="card p-3" style="width: 18rem;">
+            <div class="card p-3 " style="width: 18rem;">
                 <img src="./img/running-10-claves-para-correr-actualmente.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Correr de noche es más peligroso que correr de día</h5>
-                  <p class="card-text">Cuando es de noche se corre más rápido porque hay más riesgo de que te atraquen, y más todavía si es por las calles de Barcelona.</p>
+                <div class="card-body ">
+                  <p class="card-title h5">Correr de noche es más peligroso que correr de día</p>
+                  <p class="card-text text-black">Cuando es de noche se corre más rápido porque hay más riesgo de que te atraquen, y más todavía si es por las calles de Barcelona.</p>
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">Categoría: Protips</li>
@@ -187,11 +183,11 @@
                   <li class="list-group-item">Número de me visualizaciones: 2131 </li>
                 </ul>
               </div>
-              <div class="card p-3" style="width: 18rem;">
+              <div class="card p-3 " style="width: 18rem;">
                 <img src="./img/running-10-claves-para-correr-actualmente.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Correr de noche es más peligroso que correr de día</h5>
-                  <p class="card-text">Cuando es de noche se corre más rápido porque hay más riesgo de que te atraquen, y más todavía si es por las calles de Barcelona.</p>
+                <div class="card-body ">
+                  <p class="card-title h5">Correr de noche es más peligroso que correr de día</p>
+                  <p class="card-text text-black">Cuando es de noche se corre más rápido porque hay más riesgo de que te atraquen, y más todavía si es por las calles de Barcelona.</p>
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">Categoría: Protips</li>
@@ -201,12 +197,11 @@
                   <li class="list-group-item">Número de me visualizaciones: 2131 </li>
                 </ul>
               </div>
-
-              <div class="card p-3" style="width: 18rem;">
+              <div class="card p-3 " style="width: 18rem;">
                 <img src="./img/running-10-claves-para-correr-actualmente.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Correr de noche es más peligroso que correr de día</h5>
-                  <p class="card-text">Cuando es de noche se corre más rápido porque hay más riesgo de que te atraquen, y más todavía si es por las calles de Barcelona.</p>
+                <div class="card-body ">
+                  <p class="card-title h5">Correr de noche es más peligroso que correr de día</p>
+                  <p class="card-text text-black">Cuando es de noche se corre más rápido porque hay más riesgo de que te atraquen, y más todavía si es por las calles de Barcelona.</p>
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">Categoría: Protips</li>
@@ -216,12 +211,11 @@
                   <li class="list-group-item">Número de me visualizaciones: 2131 </li>
                 </ul>
               </div>
-
-              <div class="card p-3" style="width: 18rem;">
+              <div class="card p-3 " style="width: 18rem;">
                 <img src="./img/running-10-claves-para-correr-actualmente.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Correr de noche es más peligroso que correr de día</h5>
-                  <p class="card-text">Cuando es de noche se corre más rápido porque hay más riesgo de que te atraquen, y más todavía si es por las calles de Barcelona.</p>
+                <div class="card-body ">
+                  <p class="card-title h5">Correr de noche es más peligroso que correr de día</p>
+                  <p class="card-text text-black">Cuando es de noche se corre más rápido porque hay más riesgo de que te atraquen, y más todavía si es por las calles de Barcelona.</p>
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">Categoría: Protips</li>
@@ -231,12 +225,11 @@
                   <li class="list-group-item">Número de me visualizaciones: 2131 </li>
                 </ul>
               </div>
-
-              <div class="card p-3" style="width: 18rem;">
+              <div class="card p-3 " style="width: 18rem;">
                 <img src="./img/running-10-claves-para-correr-actualmente.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Correr de noche es más peligroso que correr de día</h5>
-                  <p class="card-text">Cuando es de noche se corre más rápido porque hay más riesgo de que te atraquen, y más todavía si es por las calles de Barcelona.</p>
+                <div class="card-body ">
+                  <p class="card-title h5">Correr de noche es más peligroso que correr de día</p>
+                  <p class="card-text text-black">Cuando es de noche se corre más rápido porque hay más riesgo de que te atraquen, y más todavía si es por las calles de Barcelona.</p>
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">Categoría: Protips</li>
@@ -246,12 +239,11 @@
                   <li class="list-group-item">Número de me visualizaciones: 2131 </li>
                 </ul>
               </div>
-
-              <div class="card p-3" style="width: 18rem;">
+              <div class="card p-3 " style="width: 18rem;">
                 <img src="./img/running-10-claves-para-correr-actualmente.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Correr de noche es más peligroso que correr de día</h5>
-                  <p class="card-text">Cuando es de noche se corre más rápido porque hay más riesgo de que te atraquen, y más todavía si es por las calles de Barcelona.</p>
+                <div class="card-body ">
+                  <p class="card-title h5">Correr de noche es más peligroso que correr de día</p>
+                  <p class="card-text text-black">Cuando es de noche se corre más rápido porque hay más riesgo de que te atraquen, y más todavía si es por las calles de Barcelona.</p>
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">Categoría: Protips</li>
@@ -261,7 +253,7 @@
                   <li class="list-group-item">Número de me visualizaciones: 2131 </li>
                 </ul>
               </div>
-            
+              
 
             
 
