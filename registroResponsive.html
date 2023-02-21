@@ -33,51 +33,56 @@
 <!--
     Header y nav
 -->
+
+<div class="form-check form-switch">
+  <label class="form-check-label" for="lightSwitch"> Dark Mode </label>
+  <input class="form-check-input" type="checkbox" id="lightSwitch" />
+</div>
+
 <nav class="navbar navbar-expand-lg bg-secondary">
   <div class="container-fluid d-flex">
-    <div class="container text-center">
-      <h1 class="">RUNNING HAMSTER WOJAK<img style="width: 4rem;"alt="logo de la página" src="./img/2kuffv.svg"></img></h1>
+    <div class="container text-center text-white">
+      <h1>RUNNING HAMSTER WOJAK</h1>
+      <img style="width: 4rem;" alt="logo de la página" src="./img/2kuffv.svg">
       
     </div>
     
     <div class="container d-flex justify-content-center">
-      <a class="navbar-brand" href="#">Crear nueva entrada &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+      <a class="navbar-brand text-white" href="#">Crear nueva entrada &nbsp; <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
         <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
       </svg></a>
     </div>
     <div class="container d-flex justify-content-between">
     
-          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#ModalForm"><button type="button" class="btn btn-secondary btn-lg">Login</button></a>
+          <a data-bs-toggle="modal" data-bs-target="#ModalForm"  class="btn btn-secondary btn-lg">Login</a>
           
-          <a href="./registroResponsive.html" class="nav-link"><button type="button" class="btn btn-secondary btn-lg">Registro</button></a>
+          <a href="./registroResponsive.html"  class="btn btn-secondary btn-lg">Registro</a>
         
-          <a href="./index.html" class="nav-link"><button type="button" class="btn btn-secondary btn-lg">Entradas</button></a>
+          <a href="./index.html"  class="btn btn-secondary btn-lg">Entradas</a>
       
     </div>          
       
 
-      <div class="container-fluid  d-flex flex-column justify-content-evenly">
-          <button role="button" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="btn btn-success" type="submit">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg>
-          </button>
-        <div role="button" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"  id="collapseExample" class="collapse">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-          </svg>
-          <div id="collapseExample" class="collapse">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-          </div>
-        </div>
-         
-      </div>
+    <div class="container-fluid  d-flex flex-column justify-content-evenly">
+      <button title="boton buscador" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="btn btn-success" type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+      </button>
+    <div role="navigation" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"  id="collapseExample" class="collapse">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+    </div>
+     
+  </div>
   </div> 
 </nav>
 
 
 
-  <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+  <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalForm" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
@@ -89,7 +94,7 @@
                         <label for="exampleInputEmail1" class="form-label">Usuario<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
                           </svg></label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="exampleInputEmail1">
                     </div>               
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Contraseña <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
@@ -150,14 +155,14 @@
                         <div class="row">
                           <div class="col-md-6 mb-4">
                             <div class="form-outline">
-                              <input type="text" id="form3Example1m" class="form-control form-control-lg" />
-                              <label class="form-label" for="form3Example1m">Nombre *</label>
+                              <input type="text" id="form3Example4m" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example4m">Nombre *</label>
                             </div>
                           </div>
                           <div class="col-md-6 mb-4">
                             <div class="form-outline">
-                              <input type="text" id="form3Example1n" class="form-control form-control-lg" />
-                              <label class="form-label" for="form3Example1n">Apellidos *</label>
+                              <input type="text" id="form3Example3n" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example3n">Apellidos *</label>
                             </div>
                           </div>
                         </div>
@@ -171,8 +176,8 @@
                           </div>
                           <div class="col-md-6 mb-4">
                             <div class="form-outline">
-                              <input type="text" id="form3Example1n1" class="form-control form-control-lg" />
-                              <label class="form-label" for="form3Example1n1">Provincia</label>
+                              <input type="text" id="form3Example2n1" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example2n1">Provincia</label>
                             </div>
                           </div>
                         </div>
@@ -184,8 +189,8 @@
         
                         <div class="form-outline mb-4">
                           <div class="form-outline">
-                            <input type="text" id="form3Example1n1" class="form-control form-control-lg" />
-                            <label class="form-label" for="form3Example1n1">Código Postal</label>
+                            <input type="text" id="form3Example3n1" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Example3n1">Código Postal</label>
                           </div>
                           <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
                            Código Postal
@@ -215,127 +220,89 @@
             </div>
           </div>
         </section>
-
+      </div>
       </div> 
-
-  <div class="container-fluid ">
-    <footer class="bg-light text-center text-lg-start ">
-      <div class="container p-4  ">
-        <div class="row ">         
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
-            <h5 class="text-uppercase">Dirección:</h5>
-            <h5>C/Juan Ramón Jiménez nº18</h5>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-0">Categorías</h5>
+</div>
+      <div class="container-fluid ">
+        <footer class="bg-light text-center text-lg-start ">
+          <div class="container p-4  ">
+            <div class="row ">         
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+                <h5 class="text-uppercase">Dirección:</h5>
+                <h5>C/Juan Ramón Jiménez nº18</h5>
+              </div>
     
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!" class="text-dark">Noticias</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Eventos</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Pro-tips</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Dieta</a>
-              </li>
-            </ul>
-          </div>
-         
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Secciones</h5>
-    
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-dark">Login</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Registro</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Entradas</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Crear Entrada</a>
-              </li>
-            </ul>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Categorías</h5>
+        
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!" class="text-dark">Noticias</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Eventos</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Pro-tips</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Dieta</a>
+                  </li>
+                </ul>
+              </div>
+             
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Secciones</h5>
+        
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-dark">Login</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Registro</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Entradas</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Crear Entrada</a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Etiquetas</h5>
+        
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!" class="text-dark">#love</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">#photography</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">#fashion</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">#photooftheday</a>
+                  </li>
+                </ul>
+              </div>
+             
+            </div>
+            
           </div>
           
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-0">Etiquetas</h5>
-    
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!" class="text-dark">#love</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">#photography</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">#fashion</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">#photooftheday</a>
-              </li>
-            </ul>
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">RunningHamsterWojack.com</a>
           </div>
-         
-        </div>
+        
+        </footer>
         
       </div>
-      
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2023 Copyright:
-        <a class="text-dark" href="https://mdbootstrap.com/">RunningHamsterWojack.com</a>
-      </div>
-    
-    </footer>
-    
-  </div>
+<!-- Light Switch -->
+<script src="./node_modules/light-switch-bootstrap/switch.js" ></script>
 
 </body>
-
-<script>
-    // Elemento video //
-    var video = document.getElementById("myVideo");
-    
-    // Elemento boton//
-    var btn = document.getElementById("myBtn");
-
-    // Elemento content //
-
-    var content = document.getElementById("content")
-
-    // Elemento Footer //
-
-    var footer = document.getElementById("mainFooter")
-
-     // Elemento Container //
-
-     var main = document.getElementById("mainContainer")
-    
-    // El pause and play de video
-    function playPause() {
-      if (video.paused) {
-        video.play();
-        btn.innerHTML = "Pause";
-      } else {
-        video.pause();
-        btn.innerHTML = "Play";
-      }
-    }
-
-    function exit(){
-        
-        video.style.setProperty('visibility','hidden')
-        content.style.setProperty('visibility','hidden')
-        footer.style.setProperty('visibility','visible')
-        main.style.setProperty('overflow','visible')
-
-    }
-    </script>
 </html>

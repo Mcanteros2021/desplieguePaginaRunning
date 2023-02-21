@@ -13,6 +13,7 @@
 <!-- import jquery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+
 <!--Modal JS Script -->
 <script>
     window.onload = () => {
@@ -52,17 +53,23 @@
 <!--
     Header y nav
 -->
+<div class="form-check form-switch">
+  <label class="form-check-label" for="lightSwitch"> Dark Mode </label>
+  <input class="form-check-input" type="checkbox" id="lightSwitch" />
+</div>
+
+
 
   <nav class="navbar navbar-expand-lg bg-secondary">
     <div class="container-fluid d-flex">
-      <div class="container text-center text-white">
+      <div class="container text-center text-light">
         <h1>RUNNING HAMSTER WOJAK</h1>
         <img style="width: 4rem;" alt="logo de la página" src="./img/2kuffv.svg">
         
       </div>
       
-      <div class="container d-flex justify-content-center">
-        <a class="navbar-brand text-white" href="#">Crear nueva entrada &nbsp; <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+      <div class="container d-flex justify-content-center ">
+        <a class="navbar-brand text-white " href="#">Crear nueva entrada &nbsp; <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
           <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
         </svg></a>
       </div>
@@ -148,12 +155,12 @@
     Columna principal de entradas
 -->
 
-        <div class="d-flex flex-column justify-content-center gy-5 col-9">
+        <div class="d-flex flex-column justify-content-center gy-5 col-9 ">
 
           <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Entradas</li>
+              <li class="breadcrumb-item "><a href="#">Home</a></li>
+              <li class="breadcrumb-item active text-dark" aria-current="page">Entradas</li>
             </ol>
           </nav>
 
@@ -337,7 +344,7 @@
     -->    
 
 
-  <div class="container-fluid ">
+  <div class="container-fluid text-dark">
     <footer class="bg-light text-center text-lg-start ">
       <div class="container p-4  ">
         <div class="row ">         
@@ -415,8 +422,8 @@
     </footer>
     
   </div>
+    <!-- Light Switch -->
+  <script src="./node_modules/light-switch-bootstrap/switch.js" ></script>
 
 </body>
-
-
 </html>
